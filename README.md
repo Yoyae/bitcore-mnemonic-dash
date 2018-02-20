@@ -1,25 +1,25 @@
-BIP39 Mnemonics for Bitcore-Dash
+BIP39 Mnemonics for Bitcore-Monoeci
 =======
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-mnemonic-dash.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-mnemonic-dash)
-[![Build Status](https://img.shields.io/travis/dashpay/bitcore-mnemonic-dash.svg?branch=master&style=flat-square)](https://travis-ci.org/dashpay/bitcore-mnemonic-dash)
-[![Coverage Status](https://img.shields.io/coveralls/dashpay/bitcore-mnemonic-dash.svg?style=flat-square)](https://coveralls.io/r/dashpay/bitcore-mnemonic-dash)
+[![NPM Package](https://img.shields.io/npm/v/bitcore-mnemonic-monoeci.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-mnemonic-monoeci)
+[![Build Status](https://img.shields.io/travis/yoyae/bitcore-mnemonic-monoeci.svg?branch=master&style=flat-square)](https://travis-ci.org/yoyae/bitcore-mnemonic-monoeci)
+[![Coverage Status](https://img.shields.io/coveralls/yoyae/bitcore-mnemonic-monoeci.svg?style=flat-square)](https://coveralls.io/r/yoyae/bitcore-mnemonic-monoeci)
 
-A module for [bitcore-dash](https://github.com/dashpay/bitcore-dash) that implements [Mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
+A module for [bitcore-monoeci](https://github.com/yoyae/bitcore-monoeci) that implements [Mnemonic code for generating deterministic keys](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
 
 ## Getting Started
 
 This library is distributed in both the npm and bower packaging systems.
 
 ```sh
-npm install bitcore-mnemonic-dash
-bower install bitcore-mnemonic-dash
+npm install bitcore-mnemonic-monoeci
+bower install bitcore-mnemonic-monoeci
 ```
 
 There are many examples of how to use it on the developer guide [section for mnemonic](http://bitcore.io/guide/module/mnemonic/index.html). For example, the following code would generate a new random mnemonic code and convert it to a `HDPrivateKey`.
 
 ```javascript
-var Mnemonic = require('bitcore-mnemonic-dash');
+var Mnemonic = require('bitcore-mnemonic-monoeci');
 var code = new Mnemonic(Mnemonic.Words.SPANISH);
 code.toString(); // natal hada sutil año sólido papel jamón combate aula flota ver esfera...
 var xpriv = code.toHDPrivateKey();
@@ -27,7 +27,7 @@ var xpriv = code.toHDPrivateKey();
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/dashpay/bitcore-dash/blob/master/CONTRIBUTING.md) on the main bitcore-dash repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/yoyae/bitcore-monoeci/blob/master/CONTRIBUTING.md) on the main bitcore-monoeci repo for information about how to contribute.
 
 ## License
 
